@@ -14,12 +14,12 @@
 
 void	ft_putchar(char c);
 
-
+/*
 int main(void) 
 {
 	ft_putchar('d');	
 }
-
+*/
 
 void	ft_putchar(char c)
 {
