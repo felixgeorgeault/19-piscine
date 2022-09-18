@@ -13,26 +13,23 @@
 int	ft_sqrt(int nb)
 {
 	int	i;
-	int	result;
 
 	i = 1;
-	result = 1;
 	if (nb == 0 || nb == 1)
 		return (nb);
-	while (result <= nb && i < 46340)
+	if (nb == 4)
+		return (2);
+	while (i < nb / 2 && i < 46340)
 	{
+		if ((i * i) == nb)
+			return (i);
 		i++;
-		result = i * i;
 	}
-	if (((i - 1) * (i - 1)) != nb)
-	{
-		return (0);
-	}
-	return (i - 1);
+	return (0);
 }
 #include <stdio.h>
 
 int	main(void)
 {
-	printf("%d", ft_sqrt(121));
+	printf("%d", ft_sqrt(169));
 }
