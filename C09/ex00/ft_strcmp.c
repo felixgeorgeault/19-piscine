@@ -1,45 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/13 15:19:49 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/23 11:20:40 by fgeorgea         ###   ########.fr       */
+/*   Created: 2022/09/22 17:05:41 by fgeorgea          #+#    #+#             */
+/*   Updated: 2022/09/26 10:32:01 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
-	int	j;
 
 	i = 0;
-	j = 0;
-	if (to_find[j] == '\0')
-		return (str);
-	while (str[i])
+	while (s1[i] == s2[i])
 	{
-		if (str[i] == to_find[j])
-		{
-			j++;
-			if (to_find[j] == '\0')
-			{
-				return (&str[i - j + 1]);
-			}
-		}
-		else
-			j = 0;
+		if (s1[i] == '\0' && s2[i] == '\0')
+			return (0);
 		i++;
 	}
-	return (0);
-}
-#include <stdio.h>
-
-int	main(void)
-{
-	char str[] = "coucou les gens";
-	char find[] = "les";
-	printf("%s", ft_strstr(str, find));
+	return (s1[i] - s2[i]);
 }

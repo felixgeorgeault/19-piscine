@@ -6,7 +6,7 @@
 /*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 10:14:07 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/18 13:47:46 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/09/26 09:57:13 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_array_size(int min, int max)
 	int	size;
 
 	size = max - min;
-	if (size < 0)
+	if (size < 0 && min < max)
 		return (size * (-1));
 	if (min >= max)
 		return (0);
@@ -33,11 +33,9 @@ int	*ft_range(int min, int max)
 	tab = NULL;
 	size_tab = ft_array_size(min, max);
 	tab = malloc(sizeof(int) * size_tab);
+	if (tab == NULL || size_tab == 0)
+		return (0);
 	i = 0;
-	if (size_tab == '\0')
-		return (0);
-	if (tab == NULL)
-		return (0);
 	while (i < size_tab)
 	{
 		tab[i] = min;
@@ -46,22 +44,25 @@ int	*ft_range(int min, int max)
 	}
 	return (tab);
 }
-#include <stdio.h>
 
+/*
+#include <stdio.h>
 int	main(void)
 {
-	int	min = -2147483648;
-	int	max = -2147483648;
+	int min = 10;
+	int max = 11;
+	int i = 0;
+	int size;
 	int	*tab;
-	int	i;
-	int	size;
 
-	size = ft_array_size(min, max);
 	tab = ft_range(min, max);
-	i = 0;
+	size = ft_array_size(min, max);	
+	printf("Size: %d\n\n", ft_array_size(min, max));
 	while (i < size)
 	{
 		printf("%d\n", tab[i]);
 		i++;
 	}
+	return (0);
 }
+*/

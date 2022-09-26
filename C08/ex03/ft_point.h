@@ -6,8 +6,16 @@
 /*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 16:28:05 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/17 16:30:21 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/09/22 13:37:06 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-void	set_point(t_point *point);
+#ifndef FT_POINT_H
+# define FT_POINT_H
+
+typedef struct s_point
+{
+	int	x;
+	int	y;
+}			t_point;
+
+#endif

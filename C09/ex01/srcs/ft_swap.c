@@ -1,46 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/16 09:35:15 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/26 09:45:00 by fgeorgea         ###   ########.fr       */
+/*   Created: 2022/09/22 17:01:16 by fgeorgea          #+#    #+#             */
+/*   Updated: 2022/09/26 10:34:58 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-int	ft_strlen(char *str)
+void	ft_swap(int *a, int *b)
 {
-	int	i;
+	int	tempo;
 
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
-
-char	*ft_strdup(char *src)
-{
-	int		i;
-	char	*str;
-	int		src_len;
-
-	i = 0;
-	str = NULL;
-	src_len = ft_strlen(src);
-	str = malloc((sizeof(*str) * src_len) + 1);
-	if (str == NULL)
-		return (0);
-	while (src[i])
-	{
-		str[i] = src[i];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
-}
+	tempo = *a;
+	*a = *b;
+	*b = tempo;
+}	

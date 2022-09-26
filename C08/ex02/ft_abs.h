@@ -1,46 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/16 09:35:15 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/26 09:45:00 by fgeorgea         ###   ########.fr       */
+/*   Created: 2022/09/22 09:58:19 by fgeorgea          #+#    #+#             */
+/*   Updated: 2022/09/24 11:10:35 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-int	ft_strlen(char *str)
-{
-	int	i;
+# define ABS(Value) (Value < 0 ? -Value : Value) 
 
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
-
-char	*ft_strdup(char *src)
-{
-	int		i;
-	char	*str;
-	int		src_len;
-
-	i = 0;
-	str = NULL;
-	src_len = ft_strlen(src);
-	str = malloc((sizeof(*str) * src_len) + 1);
-	if (str == NULL)
-		return (0);
-	while (src[i])
-	{
-		str[i] = src[i];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
-}
+#endif
