@@ -6,7 +6,7 @@
 /*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 11:08:12 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/26 14:31:10 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/09/28 11:50:07 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,5 +83,5 @@ void	ft_putnbr_base(int nbr, char *base)
 
 int	main(void)
 {
-	ft_putnbr_base(-2147483648, "0123456789abcdef");
+	ft_putnbr_base(42, "oscar");
 }

@@ -6,7 +6,7 @@
 /*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 10:31:48 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/26 12:41:44 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/09/27 09:21:02 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	ft_strlen_tot(int size, char **strs, char *sep)
 		i++;
 	}
 	count -= ft_strlen(sep);
-	return (count);
+	return (count + 1);
 }
 
 char	*ft_malloc_safe(int type, int length)
@@ -87,7 +87,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	return (str);
 }
 
-/*
+
 #include <stdio.h>
 int	main(void)
 {
@@ -101,4 +101,4 @@ int	main(void)
 	str = ft_strjoin(2, strs, separator);
 	printf("%s", str);
 	free(str);
-}*/
+}

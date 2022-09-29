@@ -6,40 +6,36 @@
 /*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 13:16:00 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/26 13:17:43 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/09/27 10:01:59 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
 int	check_separator(char c, char *charset)
 {
-	int	i;
-
-	i = 0;
-	while (charset[i] != '\0')
+	while (*charset)
 	{
-		if (c == charset[i])
+		if (c == *charset)
 			return (1);
-		i++;
+		charset++;
 	}
 	return (0);
 }
 
 int	count_strings(char *str, char *charset)
 {
-	int	i;
 	int	count;
 
 	count = 0;
-	i = 0;
-	while (str[i] != '\0')
+	while (*str)
 	{
-		while (str[i] != '\0' && check_separator(str[i], charset))
-			i++;
-		if (str[i] != '\0')
+		while (*str && check_separator(*str, charset))
+			str++;
+		if (*str)
 			count++;
-		while (str[i] != '\0' && !check_separator(str[i], charset))
-			i++;
+		while (*str && !check_separator(*str, charset))
+			str++;
 	}
 	return (count);
 }
@@ -56,13 +52,13 @@ int	ft_strlen_sep(char *str, char *charset)
 
 char	*ft_word(char *str, char *charset)
 {
-	int		len_word;
 	int		i;
+	int		len_word;
 	char	*word;
 
 	i = 0;
 	len_word = ft_strlen_sep(str, charset);
-	word = (char *)malloc(sizeof(char) * (len_word + 1));
+	word = (char *)malloc((sizeof(char) * (len_word)) + 1);
 	while (i < len_word)
 	{
 		word[i] = str[i];
@@ -74,35 +70,35 @@ char	*ft_word(char *str, char *charset)
 
 char	**ft_split(char *str, char *charset)
 {
-	char	**strings;
 	int		i;
+	char	**strs;
 
 	i = 0;
-	strings = (char **)malloc(sizeof(char *)
+	strs = (char **)malloc(sizeof(char *)
 			* (count_strings(str, charset) + 1));
-	while (*str != '\0')
+	while (*str)
 	{
-		while (*str != '\0' && check_separator(*str, charset))
+		while (*str && check_separator(*str, charset))
 			str++;
-		if (*str != '\0')
+		if (*str)
 		{
-			strings[i] = ft_word(str, charset);
+			strs[i] = ft_word(str, charset);
 			i++;
 		}
 		while (*str && !check_separator(*str, charset))
 			str++;
 	}
-	strings[i] = 0;
-	return (strings);
+	strs[i] = 0;
+	return (strs);
 }
 
+/*
 #include <stdio.h>
-int	main(int argc, char **argv)
+int	main(void)
 {
 	int		index;
 	char	**split;
-	(void)	argc;
-	split = ft_split(argv[1], argv[2]);
+	split = ft_split(",,,,,fseou ifh .....berep,,,,e", ",.");
 	index = 0;
 	while (split[index])
 	{
@@ -110,3 +106,4 @@ int	main(int argc, char **argv)
 		index++;
 	}
 }
+*/

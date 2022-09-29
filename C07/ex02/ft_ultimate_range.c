@@ -6,7 +6,7 @@
 /*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 09:45:40 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/26 09:59:10 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/09/28 14:58:02 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,18 +32,15 @@ int	ft_ultimate_range(int **range, int min, int max)
 
 	if (min >= max)
 	{
-		*range = 0;
+		*range = NULL;
 		return (0);
 	}
 	size = ft_array_size(min, max);
 	tab = NULL;
 	tab = malloc(sizeof(tab) * size);
 	i = 0;
-	if (tab == NULL)
-	{
-		*range = 0;
+	if (!tab)
 		return (-1);
-	}
 	while (i < size)
 	{
 		tab[i] = min + i;
@@ -52,6 +49,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	*range = tab;
 	return (size);
 }
+
 /*
 #include <stdio.h>
 int	main(void)
