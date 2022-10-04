@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fgeorgea <fgeorgea@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/07 17:05:22 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/09 10:29:42 by fgeorgea         ###   ########.fr       */
+/*   Created: 2022/10/04 22:29:56 by fgeorgea          #+#    #+#             */
+/*   Updated: 2022/10/04 22:30:01 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h> 
-
-void	ft_putchar(char c);
 
 void	ft_putchar(char c)
 {

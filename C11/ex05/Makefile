@@ -3,7 +3,7 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: fgeorgea <fgeorgea@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/28 19:51:39 by fgeorgea          #+#    #+#              #
 #    Updated: 2022/09/28 20:29:11 by fgeorgea         ###   ########.fr        #

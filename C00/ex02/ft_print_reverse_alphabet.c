@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fgeorgea <fgeorgea@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:27:26 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/09 10:32:33 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/10/02 16:49:17 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-void	ft_print_reverse_alphabet(void);
-void	ft_putchar(char c);
 
 void	ft_putchar(char c)
 {

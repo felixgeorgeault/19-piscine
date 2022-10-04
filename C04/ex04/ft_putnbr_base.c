@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fgeorgea <fgeorgea@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 11:08:12 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/28 11:50:07 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/10/02 17:11:04 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <unistd.h>
 
 long int	ft_convert_pos(long int nbr)
@@ -80,8 +79,10 @@ void	ft_putnbr_base(int nbr, char *base)
 	}
 }
 
-
+/*
+#include <stdio.h>
 int	main(void)
 {
 	ft_putnbr_base(42, "oscar");
 }
+*/

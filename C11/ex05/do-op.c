@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   do-op.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fgeorgea <fgeorgea@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 16:13:16 by fgeorgea          #+#    #+#             */
 /*   Updated: 2022/09/29 10:28:42 by fgeorgea         ###   ########.fr       */

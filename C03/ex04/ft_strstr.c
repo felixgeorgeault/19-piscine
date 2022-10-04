@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fgeorgea <fgeorgea@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 15:19:49 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/23 11:20:40 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/10/02 17:08:50 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,12 @@ char	*ft_strstr(char *str, char *to_find)
 	}
 	return (0);
 }
+/*
 #include <stdio.h>
-
 int	main(void)
 {
 	char str[] = "coucou les gens";
 	char find[] = "les";
 	printf("%s", ft_strstr(str, find));
 }
+*/

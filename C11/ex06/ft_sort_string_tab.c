@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_string_tab.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fgeorgea <fgeorgea@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 20:43:57 by fgeorgea          #+#    #+#             */
 /*   Updated: 2022/09/29 10:46:05 by fgeorgea         ###   ########.fr       */

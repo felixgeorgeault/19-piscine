@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_any.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fgeorgea <fgeorgea@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 18:54:57 by fgeorgea          #+#    #+#             */
 /*   Updated: 2022/09/28 15:43:23 by fgeorgea         ###   ########.fr       */

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lovanden <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lovanden <fgeorgea@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:32:30 by lovanden          #+#    #+#             */
 /*   Updated: 2022/09/25 11:59:12 by lovanden         ###   ########.fr       */

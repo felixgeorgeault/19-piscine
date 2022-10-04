@@ -3,18 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fgeorgea <fgeorgea@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 10:57:10 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/09 10:38:27 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/10/02 16:51:02 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c);
-void	ft_putchar_triple(char a, char b, char c);
-void	ft_print_comb(void);
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_putchar_triple(char a, char b, char c)
+{
+	ft_putchar(a);
+	ft_putchar(b);
+	ft_putchar(c);
+}
 
 void	ft_print_comb(void)
 {
@@ -42,16 +50,4 @@ void	ft_print_comb(void)
 		}
 		a++;
 	}
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void	ft_putchar_triple(char a, char b, char c)
-{
-	ft_putchar(a);
-	ft_putchar(b);
-	ft_putchar(c);
 }

@@ -3,7 +3,7 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lovanden <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: lovanden <fgeorgea@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/24 16:43:03 by lovanden          #+#    #+#              #
 #    Updated: 2022/09/25 11:56:12 by lovanden         ###   ########.fr        #

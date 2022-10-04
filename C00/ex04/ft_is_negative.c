@@ -3,16 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgeorgea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fgeorgea <fgeorgea@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 19:14:02 by fgeorgea          #+#    #+#             */
-/*   Updated: 2022/09/09 10:36:39 by fgeorgea         ###   ########.fr       */
+/*   Updated: 2022/10/02 16:50:24 by fgeorgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
-void	ft_is_negative(int n);
-void	ft_putchar(char c);
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_is_negative(int n)
 {
@@ -24,9 +27,4 @@ void	ft_is_negative(int n)
 	{
 		ft_putchar('P');
 	}
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
 }
