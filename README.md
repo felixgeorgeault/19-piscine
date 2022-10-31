@@ -4,6 +4,8 @@
 
 ### My scores:
 
+<a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cl9wz0yjx00400fmj9wvknyyb/stats?cursusId=9&coalitionId=piscine" alt="fgeorgea's 42 stats" /></a>
+
 <table>
         <thead>
           </thead>
