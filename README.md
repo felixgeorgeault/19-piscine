@@ -75,10 +75,6 @@
           <td><a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cl9wz0yjx00400fmj9wvknyyb/project/2797231" alt="fgeorgea's 42 C Piscine Exam 02 Score" /></a></td>
         </tr>
         <tr>
-          <td>Exam03</td>
-          <td><a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cl9wz0yjx00400fmj9wvknyyb/project/2776925" alt="fgeorgea's 42 C Piscine C 03 Score" /></a></td>
-        </tr>
-        <tr>
           <td>Exam final</td>
           <td><a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cl9wz0yjx00400fmj9wvknyyb/project/2810900" alt="fgeorgea's 42 C Piscine Final Exam Score" /></a></td>
         </tr>
